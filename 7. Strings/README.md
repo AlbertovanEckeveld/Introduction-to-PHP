@@ -67,4 +67,4 @@ The PHP str_replace() function replaces some characters with some other characte
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../8.README.md)
+[Next >](../8.%20Numbers/README.md)
