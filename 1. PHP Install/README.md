@@ -37,4 +37,3 @@ Output:
 ```
 I love PHP!
 ```
-

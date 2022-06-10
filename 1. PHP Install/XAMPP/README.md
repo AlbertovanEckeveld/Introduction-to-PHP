@@ -17,5 +17,10 @@ After installing XAMPP via the installer, it is a matter of starting the appropr
 Apache: 
 - HTTP: 80
 - HTTP: 443
+
 Mysql:
 - 3306
+
+Filezilla (FTP: FileTransferProtocol):
+- FTP: 21
+- SFTP: 22
