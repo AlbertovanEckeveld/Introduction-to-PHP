@@ -26,7 +26,7 @@ NOTE: XAMPP provides all three applications in 1 program.
 The official PHP website (PHP.net) has installation instructions for PHP: http://php.net/manual/en/install.php
 
 # Your first php file:
-(See [Index.php](Index.php))
+(See [index.php](index.php))
 ```
 <?php
     $txt = "PHP";
@@ -37,3 +37,9 @@ Output:
 ```
 I love PHP!
 ```
+
+Place your index.php file in 'C:\xampp\htdocs'. 
+
+Then open your web browser and search in the url bar: 'localhost:80/index.php'.
+
+[Next >](../2.%20Syntax/README.md)
