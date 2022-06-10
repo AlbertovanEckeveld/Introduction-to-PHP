@@ -26,7 +26,7 @@ NOTE: XAMPP provides all three applications in 1 program.
 The official PHP website (PHP.net) has installation instructions for PHP: http://php.net/manual/en/install.php
 
 # Your first php file:
-(See index.php)
+(See [index.php](index.php))
 ```
 <?php
     $txt = "PHP";
