@@ -6,7 +6,7 @@ A PHP script is executed on the server, and the plain HTML result is sent back t
 
 A PHP script can be placed anywhere in the document.
 
-A PHP script starts with <?php and ends with ?>:
+A PHP script starts with <? php and ends with ?>:
 
 ```
 <?php
