@@ -47,7 +47,7 @@ The following example shows how to output text and variables with the ```echo```
 
 ## The PHP print Statement
 
-The print statement can be used with or without parentheses: print or print().
+The print statement can be used with or without parentheses: ```print``` or ```print()```.
 
 #### Display Text
 
@@ -65,7 +65,7 @@ The following example shows how to output text with the ```print``` command (not
 
 #### Display Variables
 
-The following example shows how to output text and variables with the print statement:
+The following example shows how to output text and variables with the ```print``` statement:
 
 ### Example: 
 
