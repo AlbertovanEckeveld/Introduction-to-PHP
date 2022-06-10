@@ -9,13 +9,11 @@ Comments can be used to:
 - Let others understand your code
 - Remind yourself of what you did - Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did. Comments can remind you of what you were thinking when you wrote the code
 
-PHP supports several ways of commenting:
+## PHP supports several ways of commenting:
+
+### Example 1: Syntax for multiple-line comments:
 
 ```
-Example
-
-Syntax for single-line comments:
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -30,11 +28,8 @@ Syntax for single-line comments:
 </html> 
 ```
 
+### Example 2: Syntax for multiple-line comments:
 ```
-Example
-
-Syntax for multiple-line comments:
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -51,11 +46,9 @@ Syntax for multiple-line comments:
 </html> 
 ```
 
+
+### Example 3: Using comments to leave out parts of the code:
 ```
-Example
-
-Using comments to leave out parts of the code:
-
 <!DOCTYPE html>
 <html>
 <body>
