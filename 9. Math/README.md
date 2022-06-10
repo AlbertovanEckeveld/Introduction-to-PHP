@@ -6,7 +6,7 @@ PHP has a set of math functions that allows you to perform mathematical tasks on
 
 The pi() function returns the value of PI:
 
-### EXAMPLE:
+#### EXAMPLE:
 
 ```
 <?php
@@ -18,7 +18,7 @@ The pi() function returns the value of PI:
 
 The min() and max() functions can be used to find the lowest or highest value in a list of arguments:
 
-### EXAMPLE
+#### EXAMPLE
 
 ```
 <?php
@@ -32,7 +32,7 @@ The min() and max() functions can be used to find the lowest or highest value in
 
 The abs() function returns the absolute (positive) value of a number:
 
-### EXAMPLE
+#### EXAMPLE
 
 ```
 <?php
@@ -44,7 +44,7 @@ The abs() function returns the absolute (positive) value of a number:
 
 The sqrt() function returns the square root of a number:
 
-### EXAMPLE
+#### EXAMPLE
 
 ```
 <?php
@@ -56,7 +56,7 @@ The sqrt() function returns the square root of a number:
 
 The round() function rounds a floating-point number to its nearest integer:
 
-### EXAMPLE
+#### EXAMPLE
 
 ```
 <?php
@@ -69,7 +69,7 @@ The round() function rounds a floating-point number to its nearest integer:
 
 The rand() function generates a random number:
 
-### EXAMPLE
+#### EXAMPLE
 
 ```
 <?php
