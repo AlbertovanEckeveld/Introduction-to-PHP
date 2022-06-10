@@ -1,120 +1,87 @@
-# PHP Variables Scope
+# PHP echo and print Statements
+With PHP, there are two basic ways to get output: ```echo``` and ```print```.
 
-## PHP Variables Scope
-In PHP, variables can be declared anywhere in the script.
+In this tutorial we use ```echo``` or ```print``` in almost every example. So, this chapter contains a little more info about those two output statements.
 
-The scope of a variable is the part of the script where the variable can be referenced/used.
+## PHP echo and print Statements
+```echo``` and ```print``` are more or less the same. They are both used to output data to the screen.
 
-PHP has three different variable scopes:
-- local
-- global
-- static
+The differences are small: ```echo``` has no return value while ```print``` has a return value of 1 so it can be used in expressions. ```echo``` can take multiple parameters (although such usage is rare) while ```print``` can take one argument. ```echo``` is marginally faster than ```print```.
 
-## Global and Local Scope
+## The PHP echo Statement
 
-A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
+The echo statement can be used with or without parentheses: ```echo``` or ```echo()```.
 
-### Example:
+#### Display Text
+
+The following example shows how to output text with the ```echo``` command (notice that the text can contain HTML markup):
+
+### Example: 
 
 ```
 <?php
-    $x = 5; // global scope
-
-    function myTest() {
-    // using x inside this function will generate an error
-    echo "<p>Variable x inside function is: $x</p>";
-    }
-    myTest();
-
-    echo "<p>Variable x outside function is: $x</p>";
+    echo "<h2>PHP is Fun!</h2>";
+    echo "Hello world!<br>";
+    echo "I'm about to learn PHP!<br>";
+    echo "This ", "string ", "was ", "made ", "with multiple parameters.";
 ?> 
 ```
+#### Display Variables
 
-A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function:
+The following example shows how to output text and variables with the ```echo``` statement:
 
-### Example:
-```
-<?php
-    function myTest() {
-    $x = 5; // local scope
-    echo "<p>Variable x inside function is: $x</p>";
-    }
-    myTest();
-
-    // using x outside the function will generate an error
-    echo "<p>Variable x outside function is: $x</p>";
-?> 
-```
-
-## PHP The global Keyword
-
-The ```global``` keyword is used to access a global variable from within a function.
-
-To do this, use the ```global``` keyword before the variables (inside the function):
-
-### Example:
+### Example: 
 
 ```
 <?php
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
     $x = 5;
-    $y = 10;
+    $y = 4;
 
-    function myTest() {
-    global $x, $y;
-    $y = $x + $y;
-    }
-
-    myTest();
-    echo $y; // outputs 15
+    echo "<h2>" . $txt1 . "</h2>";
+    echo "Study PHP at " . $txt2 . "<br>";
+    echo $x + $y;
 ?> 
 ```
 
-PHP also stores all global variables in an array called ```$GLOBALS[index]```. The ```index``` holds the name of the variable. This array is also accessible from within functions and can be used to update global variables directly.
+## The PHP print Statement
 
-The example above can be rewritten like this:
+The print statement can be used with or without parentheses: ```print``` or ```print()```.
+
+#### Display Text
+
+The following example shows how to output text with the ```print``` command (notice that the text can contain HTML markup):
 
 ### Example:
 
 ```
 <?php
+    print "<h2>PHP is Fun!</h2>";
+    print "Hello world!<br>";
+    print "I'm about to learn PHP!";
+?> 
+```
+
+#### Display Variables
+
+The following example shows how to output text and variables with the ```print``` statement:
+
+### Example: 
+
+```
+<?php
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
     $x = 5;
-    $y = 10;
+    $y = 4;
 
-    function myTest() {
-    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
-    }
-
-    myTest();
-    echo $y; // outputs 15
+    print "<h2>" . $txt1 . "</h2>";
+    print "Study PHP at " . $txt2 . "<br>";
+    print $x + $y;
 ?> 
 ```
-
-## PHP The static Keyword
-
-Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.
-
-To do this, use the ```static``` keyword when you first declare the variable:
-
-### Example:
-
-```
-<?php
-    function myTest() {
-    static $x = 0;
-    echo $x;
-    $x++;
-    }
-
-    myTest();
-    myTest();
-    myTest();
-?> 
-```
-
-Then, each time the function is called, that variable will still have the information it contained from the last time the function was called.
-
-Note: The variable is still local to the function.
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../6.%20Data%20Types/README.md)
+[Next >](../7.%20Strings/README.md)

@@ -1,42 +1,61 @@
 EXAMPLE 1:
 
 <?php
-    echo "<h2>PHP is Fun!</h2>";
-    echo "Hello world!<br>";
-    echo "I'm about to learn PHP!<br>";
-    echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+    $x = "Hello world!";
+    $y = 'Hello world!';
+
+    echo $x;
+    echo "<br>";
+    echo $y;
 ?> 
 
 EXAMPLE 2:
 
 <?php
-    $txt1 = "Learn PHP";
-    $txt2 = "Github.com/AlbertovanEckeveld";
-    $x = 5;
-    $y = 4;
-
-    echo "<h2>" . $txt1 . "</h2>";
-    echo "Study PHP at " . $txt2 . "<br>";
-    echo $x + $y;
+$x = 5985;
+var_dump($x);
 ?> 
 
 EXAMPLE 3:
 
 <?php
-    print "<h2>PHP is Fun!</h2>";
-    print "Hello world!<br>";
-    print "I'm about to learn PHP!";
+$x = 10.365;
+var_dump($x);
 ?> 
 
 EXAMPLE 4:
 
 <?php
-    $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
-    $x = 5;
-    $y = 4;
+$cars = array("Volvo","BMW","Toyota");
+var_dump($cars);
+?> 
 
-    print "<h2>" . $txt1 . "</h2>";
-    print "Study PHP at " . $txt2 . "<br>";
-    print $x + $y;
+EXAMPLE: 5:
+
+<?php
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message() {
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
+$myCar = new Car("black", "Volvo");
+echo $myCar -> message();
+echo "<br>";
+$myCar = new Car("red", "Toyota");
+echo $myCar -> message();
+?> 
+
+EXAMPLE 6:
+
+<?php
+    $x = "Hello world!";
+    $x = null;
+    var_dump($x);
 ?> 

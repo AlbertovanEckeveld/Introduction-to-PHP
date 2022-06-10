@@ -1,69 +1,42 @@
 EXAMPLE 1:
 
 <?php
-    $x = 5; // global scope
-
-    function myTest() {
-    // using x inside this function will generate an error
-    echo "<p>Variable x inside function is: $x</p>";
-    }
-    myTest();
-
-    echo "<p>Variable x outside function is: $x</p>";
+    echo "<h2>PHP is Fun!</h2>";
+    echo "Hello world!<br>";
+    echo "I'm about to learn PHP!<br>";
+    echo "This ", "string ", "was ", "made ", "with multiple parameters.";
 ?> 
 
 EXAMPLE 2:
 
 <?php
-    function myTest() {
-    $x = 5; // local scope
-    echo "<p>Variable x inside function is: $x</p>";
-    }
-    myTest();
+    $txt1 = "Learn PHP";
+    $txt2 = "Github.com/AlbertovanEckeveld";
+    $x = 5;
+    $y = 4;
 
-    // using x outside the function will generate an error
-    echo "<p>Variable x outside function is: $x</p>";
+    echo "<h2>" . $txt1 . "</h2>";
+    echo "Study PHP at " . $txt2 . "<br>";
+    echo $x + $y;
 ?> 
 
 EXAMPLE 3:
 
 <?php
-$x = 5;
-$y = 10;
-
-function myTest() {
-  global $x, $y;
-  $y = $x + $y;
-}
-
-myTest();
-echo $y; // outputs 15
+    print "<h2>PHP is Fun!</h2>";
+    print "Hello world!<br>";
+    print "I'm about to learn PHP!";
 ?> 
 
 EXAMPLE 4:
 
 <?php
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
     $x = 5;
-    $y = 10;
+    $y = 4;
 
-    function myTest() {
-    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
-    }
-
-    myTest();
-    echo $y; // outputs 15
-?> 
-
-Example 5:
-
-<?php
-function myTest() {
-  static $x = 0;
-  echo $x;
-  $x++;
-}
-
-myTest();
-myTest();
-myTest();
+    print "<h2>" . $txt1 . "</h2>";
+    print "Study PHP at " . $txt2 . "<br>";
+    print $x + $y;
 ?> 

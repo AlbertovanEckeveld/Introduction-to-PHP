@@ -1,86 +1,162 @@
-# PHP echo and print Statements
-With PHP, there are two basic ways to get output: ```echo``` and ```print```.
+# PHP Data Types
 
-In this tutorial we use ```echo``` or ```print``` in almost every example. So, this chapter contains a little more info about those two output statements.
+## PHP Data Types
 
-## PHP echo and print Statements
-```echo``` and ```print``` are more or less the same. They are both used to output data to the screen.
+Variables can store data of different types, and different data types can do different things.
 
-The differences are small: ```echo``` has no return value while ```print``` has a return value of 1 so it can be used in expressions. ```echo``` can take multiple parameters (although such usage is rare) while ```print``` can take one argument. ```echo``` is marginally faster than ```print```.
+PHP supports the following data types:
 
-## The PHP echo Statement
+- String
+- Integer
+- Float (floating point numbers - also called double)
+- Boolean
+- Array
+- Object
+- NULL
+- Resource
 
-The echo statement can be used with or without parentheses: ```echo``` or ```echo()```.
+## PHP String
 
-#### Display Text
+A string is a sequence of characters, like "Hello world!".
 
-The following example shows how to output text with the ```echo``` command (notice that the text can contain HTML markup):
+A string can be any text inside quotes. You can use single or double quotes:
 
-### Example: 
-
-```
-<?php
-    echo "<h2>PHP is Fun!</h2>";
-    echo "Hello world!<br>";
-    echo "I'm about to learn PHP!<br>";
-    echo "This ", "string ", "was ", "made ", "with multiple parameters.";
-?> 
-```
-#### Display Variables
-
-The following example shows how to output text and variables with the ```echo``` statement:
-
-### Example: 
+### EXAMPLE: 
 
 ```
 <?php
-    $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
-    $x = 5;
-    $y = 4;
+    $x = "Hello world!";
+    $y = 'Hello world!';
 
-    echo "<h2>" . $txt1 . "</h2>";
-    echo "Study PHP at " . $txt2 . "<br>";
-    echo $x + $y;
+    echo $x;
+    echo "<br>";
+    echo $y;
 ?> 
 ```
 
-## The PHP print Statement
+## PHP Integer
 
-The print statement can be used with or without parentheses: ```print``` or ```print()```.
+An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647.
 
-#### Display Text
+Rules for integers:
 
-The following example shows how to output text with the ```print``` command (notice that the text can contain HTML markup):
+- An integer must have at least one digit
+- An integer must not have a decimal point
+- An integer can be either positive or negative
+- Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation
 
-### Example:
+In the following example $x is an integer. The PHP var_dump() function returns the data type and value:
+
+### EXAMPLE:
 
 ```
 <?php
-    print "<h2>PHP is Fun!</h2>";
-    print "Hello world!<br>";
-    print "I'm about to learn PHP!";
+    $x = 5985;
+    var_dump($x);
 ?> 
 ```
 
-#### Display Variables
+## PHP Float
 
-The following example shows how to output text and variables with the ```print``` statement:
+A float (floating point number) is a number with a decimal point or a number in exponential form.
 
-### Example: 
+In the following example $x is a float. The PHP var_dump() function returns the data type and value:
+
+### EXAMPLE:
 
 ```
 <?php
-    $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
-    $x = 5;
-    $y = 4;
-
-    print "<h2>" . $txt1 . "</h2>";
-    print "Study PHP at " . $txt2 . "<br>";
-    print $x + $y;
+    $x = 10.365;
+    var_dump($x);
 ?> 
 ```
+
+## PHP Boolean
+
+A Boolean represents two possible states: TRUE or FALSE.
+
+```
+$x = true;
+$y = false;
+```
+
+Booleans are often used in conditional testing. You will learn more about conditional testing in a later chapter of this tutorial.
+
+
+## PHP Array
+
+An array stores multiple values in one single variable.
+
+In the following example $cars is an array. The PHP var_dump() function returns the data type and value:
+
+### EXAMPLE:
+
+```
+<?php
+    $cars = array("Volvo","BMW","Toyota");
+    var_dump($cars);
+?> 
+```
+You will learn a lot more about arrays in later chapters of this tutorial.
+
+## PHP Object
+
+Classes and objects are the two main aspects of object-oriented programming.
+
+A class is a template for objects, and an object is an instance of a class.
+
+When the individual objects are created, they inherit all the properties and behaviors from the class, but each object will have different values for the properties.
+
+Let's assume we have a class named Car. A Car can have properties like model, color, etc. We can define variables like $model, $color, and so on, to hold the values of these properties.
+
+When the individual objects (Volvo, BMW, Toyota, etc.) are created, they inherit all the properties and behaviors from the class, but each object will have different values for the properties.
+
+If you create a __construct() function, PHP will automatically call this function when you create an object from a class.
+
+### EXAMPLE:
+
+```
+<?php
+    class Car {
+      public $color;
+      public $model;
+      public function __construct($color, $model) {
+        $this->color = $color;
+        $this->model = $model;
+      }
+      public function message() {
+        return "My car is a " . $this->color . " " . $this->model . "!";
+      }
+    }
+
+    $myCar = new Car("black", "Volvo");
+    echo $myCar -> message();
+    echo "<br>";
+    $myCar = new Car("red", "Toyota");
+    echo $myCar -> message();
+?> 
+```
+
+## PHP NULL Value
+
+Null is a special data type which can have only one value: NULL.
+
+A variable of data type NULL is a variable that has no value assigned to it.
+
+Tip: If a variable is created without a value, it is automatically assigned a value of NULL.
+
+Variables can also be emptied by setting the value to NULL:
+
+### EXAMPLE:
+
+```
+<?php
+    $x = "Hello world!";
+    $x = null;
+    var_dump($x);
+?> 
+```
+
 
 See [index.php](index.php) for the examples in detail.
 

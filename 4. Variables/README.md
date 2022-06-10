@@ -83,4 +83,4 @@ You will learn more about ```strict``` and ```non-strict``` requirements, and da
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../5.%20Echo%20-%20Print/README.md)
+[Next >](./Variable%20scope.md)
