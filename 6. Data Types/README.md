@@ -157,6 +157,13 @@ Variables can also be emptied by setting the value to NULL:
 ?> 
 ```
 
+## PHP Resource
+
+The special resource type is not an actual data type. It is the storing of a reference to functions and resources external to PHP.
+
+A common example of using the resource data type is a database call.
+
+We will not talk about the resource type here, since it is an advanced topic.
 
 See [index.php](index.php) for the examples in detail.
 

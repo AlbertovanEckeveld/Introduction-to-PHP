@@ -84,4 +84,4 @@ The following example shows how to output text and variables with the ```print``
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../7.%20Strings/README.md)
+[Next >](../6.%20Data%20Types/README.md)
