@@ -87,7 +87,6 @@ For example, if you want a random integer between 10 and 100 (inclusive), use ra
 ?> 
 ```
 
-
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../9.%20Math/README.md)
+[Next >](../10.%20Constants/README.md)
