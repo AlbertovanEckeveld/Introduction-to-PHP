@@ -32,7 +32,7 @@ EXAMPLE 4:
 
 <?php
     $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
+    $txt2 = "Github/AlbertovanEckeveld";
     $x = 5;
     $y = 4;
 

@@ -35,7 +35,7 @@ The following example shows how to output text and variables with the ```echo```
 ```
 <?php
     $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
+    $txt2 = "Github/AlbertovanEckeveld";
     $x = 5;
     $y = 4;
 
@@ -72,7 +72,7 @@ The following example shows how to output text and variables with the ```print``
 ```
 <?php
     $txt1 = "Learn PHP";
-    $txt2 = "W3Schools.com";
+    $txt2 = "Github/AlbertovanEckeveld";
     $x = 5;
     $y = 4;
 

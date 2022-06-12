@@ -44,7 +44,7 @@ The following example will show how to output text and a variable:
 ### Example:
 ```
 <?php
-    $txt = "W3Schools.com";
+    $txt = "Github/AlbertovanEckeveld";
     echo "I love $txt!";
 ?> 
 ```
@@ -54,7 +54,7 @@ The following example will produce the same output as the example above:
 ### Example:
 ```
  <?php
-    $txt = "W3Schools.com";
+    $txt = "Github/AlbertovanEckeveld";
     echo "I love " . $txt . "!";
 ?> 
 ```

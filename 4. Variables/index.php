@@ -9,14 +9,14 @@ EXAMPLE 1:
 EXAMPLE 2:
 
 <?php
-    $txt = "W3Schools.com";
+    $txt = "Github/AlbertovanEckeveld";
     echo "I love $txt!";
 ?> 
 
 EXAMPLE 3:
 
 <?php
-    $txt = "W3Schools.com";
+    $txt = "Github/AlbertovanEckeveld";
     echo "I love " . $txt . "!";
 ?> 
 
