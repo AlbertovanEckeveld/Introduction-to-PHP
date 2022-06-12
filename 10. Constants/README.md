@@ -28,7 +28,7 @@ Parameters:
 
 ```
 <?php
-    define("GREETING", "Welcome to W3Schools.com!");
+    define("GREETING", "Welcome to Github/AlbertovanEckeveld!");
     echo GREETING;
 ?> 
 ```
@@ -37,7 +37,7 @@ Parameters:
 
 ```
 <?php
-    define("GREETING", "Welcome to W3Schools.com!", true);
+    define("GREETING", "Welcome to Github/AlbertovanEckeveld!", true);
     echo greeting;
 ?> 
 ```
@@ -67,7 +67,7 @@ Constants are automatically global and can be used across the entire script.
 
 ```
 <?php
-    define("GREETING", "Welcome to W3Schools.com!");
+    define("GREETING", "Welcome to Github/AlbertovanEckeveld!");
 
     function myTest() {
     echo GREETING;
@@ -79,4 +79,4 @@ Constants are automatically global and can be used across the entire script.
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../9.%20Math/README.md)
+[Next >](../11.%20Operators/README.md)
