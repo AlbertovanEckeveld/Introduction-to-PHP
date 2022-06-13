@@ -9,4 +9,4 @@
 
 See [index.php](index.php) for the examples in detail.
 
-[Next >](../)
+[Next >](../17.%20Superglobals/README.md)
